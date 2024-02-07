@@ -1,0 +1,27 @@
+{
+  "name": "DK.ENERGY.4",
+  "version": "1.0.0",
+  "description": "simple website for Mr Amour",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yacine-sinapayen/DK.ENERGY.4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yacine-sinapayen/DK.ENERGY.4/issues"
+  },
+  "homepage": "https://github.com/Yacine-sinapayen/DK.ENERGY.4#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.5.0",
+    "nodemailer-mailgun-transport": "^2.0.3"
+  }
+}

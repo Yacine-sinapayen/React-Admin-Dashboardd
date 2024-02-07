@@ -1,0 +1,171 @@
+$menu-width:250px!default;
+$bg:linear-gradient(-45deg, #ffde59, #e7333a); 
+$rouge : #c20000;
+$jaune: #F2E1AC;
+$white: white;
+$black: black;
+$breakpoint-tablet:800px;
+$breakpoint-iphone:770px;
+$breakpoint-notre-métier:1200px;
+
+
+@mixin anim {
+    transform : (translateX($menu-width * -1));
+    transition-duration:0.3s;
+} 
+//1200px
+@media only screen and (max-width: 1200px) {
+    .Notre-métier{
+        flex-direction: column;
+    }
+    .Notre-métier-paragraphe{
+        width: 90%;
+      }
+    .Notre-métier-image{
+        height: fit-content;
+    }
+}
+//800
+@media only screen and (max-width: $breakpoint-tablet) {
+    .header .header__img{
+        float:inherit;   
+    }
+    .header__img{
+        margin-right: 41px;  
+    }
+   
+    .body{
+        display:block;
+        text-align: center;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    .Qui-sommes-nous-paragraphe{
+        padding: 1em;
+    }
+    .Qui-sommes-nous-image{
+        position: static;
+    }
+    .site-pusher .site-container{ height: 100%;}
+    .site-container {overflow:hidden; height: 100%; }
+    .site-pusher{
+        height: 100%;
+        transition-duration:(0.3s);
+        transform : (translateX(0px));
+    }
+    .site-content{
+        position: absolute;
+        top: 66px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding-top: 0;
+        overflow-y: scroll;
+        background-color: #fff;
+        -webkit-overflow-scrolling:touch;
+    }
+     
+    .header__icon {
+        position: relative;
+        display: block ;
+        float: left;
+        width: 35px;
+        height: 35px;
+        padding: 1em;
+
+        cursor: pointer;
+
+        &:after{
+            content:'';
+            position: absolute;
+            display: block;
+            width: 1rem;
+            height: 0;
+            box-shadow : (0 10px 0 1px $black,0 16px 0 1px $black, 0 22px 0 1px $black );  
+        }
+    }
+    
+   
+    .menu{
+        @include anim();
+
+        position: absolute;
+        left: 0;
+        top: 0px;
+        bottom: 0;
+        color:$black;
+        
+        // background: $jaune ;
+        width: $menu-width;
+
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        
+        a{
+            display: block;
+            height: 60px;
+
+            text-align: center;
+            line-height: 40px;
+
+            border-bottom: 1px solid black;
+        }
+    }
+
+    .with--sidebar{
+        .site-pusher { 
+            transform : (translateX($menu-width)); 
+        }
+        .site-cache{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color:rgba(0,0,0,0.6);
+        }
+    }
+    .Qui-sommes-nous {
+        flex-direction: column;
+    }
+    .Qui-sommes-nous-paragraphe{
+        width: 90%;
+      }
+    .Qui-sommes-nous, .Notre-métier, .Nos-valeurs, .Nos-postes{
+        padding-bottom: 20px;
+    }
+    form, .Nos-valeurs, .Nos-postes, .Notre-métier {
+        padding:1em;
+    }
+
+}
+
+@media only screen and (max-width: $breakpoint-iphone){
+    .Nos-valeurs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Nos-valeurs-paragraphe {
+        flex-direction: column;
+        align-items: center;
+        div{
+            width: 90%;
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .site-content{
+        padding-top: 58px;
+      }
+}
+
+// nav bar responsive exemple
+// . main {
+//     display: flex; 
+//     flex-flow: row wrap;
+//     justify-content: space-between;
+// }

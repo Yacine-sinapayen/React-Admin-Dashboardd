@@ -1,0 +1,528 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Reset perso */
+a, del, ins {
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+
+label, button {
+  cursor: pointer;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+input, button {
+  outline: 0;
+}
+
+code {
+  background-color: #ddd;
+  padding: 0.3em;
+}
+
+img {
+  max-width: 100%;
+}
+
+html, body {
+  font-family: Poppins, arial;
+  color: white;
+  font-size: 16px;
+  line-height: 1.4;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+  text-align: center;
+  height: 100%;
+}
+
+span {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  padding-top: 1em;
+  font-size: 1.9em;
+  text-align: center;
+  margin-top: 0;
+}
+
+.div-np-titre {
+  text-align: center;
+}
+
+.NP-titre {
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 70px;
+  margin-top: 1em;
+  padding-bottom: 15px;
+  display: inline-flex;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+.Nm-titre-h1 {
+  margin-bottom: -0.5em;
+}
+
+.button {
+  background: linear-gradient(-45deg, #ffde59, #e7333a);
+  color: white;
+  padding: 0.5em;
+  width: 8.5em;
+  border-radius: 50px;
+  display: inline-block;
+  text-align: center;
+  font-size: 0.7em;
+  cursor: pointer;
+  border-style: none;
+  font-weight: 700;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* HEADER */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.header {
+  color: black;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 90px;
+  line-height: 70px;
+  background: white;
+  box-shadow: 0 4px 2px -2px gray;
+}
+.header .header__img {
+  float: left;
+  max-height: 90px;
+}
+
+/* MENU */
+.menu a {
+  padding: 0 10px;
+  display: inline-block;
+  margin-right: 1em;
+  margin-top: 10px;
+}
+.menu a:hover {
+  transform: scale(1.2);
+}
+
+.a-postuler {
+  display: flex;
+  align-items: center;
+  display: inline-flex;
+  width: 130px;
+  height: 30px;
+  margin: 0;
+  justify-content: center;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  background: linear-gradient(-45deg, #ffde59, #e7333a);
+  color: white;
+}
+.a-postuler p {
+  padding: 0;
+  margin: 0;
+  line-height: 34px;
+}
+
+.footer_para {
+  margin-top: 0;
+  padding: 1em;
+}
+
+.Notre-métier-paragraphe, .Nos-valeurs, .Nos-postes {
+  padding-top: 66px;
+  padding-bottom: 66px;
+}
+
+.Qui-sommes-nous, .Nos-valeurs {
+  background: linear-gradient(-45deg, #ffde59, #e7333a);
+}
+
+.Qui-sommes-nous, .Notre-métier {
+  display: flex;
+  align-items: center;
+}
+.Qui-sommes-nous .Qui-sommes-nous-image-size, .Notre-métier .Qui-sommes-nous-image-size {
+  width: 400px;
+  box-shadow: -8px -8px 12px 0 rgba(0, 0, 0, 0.3), 12px 12px 16px rgba(255, 255, 255, 0.25);
+}
+
+.Nos-valeurs-paragraphe {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+.Nos-valeurs-paragraphe div {
+  width: 34%;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.Qui-sommes-nous-paragraphe, .Notre-métier-paragraphe {
+  width: 50%;
+}
+
+.Qui-sommes-nous-image, .Notre-métier-image {
+  width: 50%;
+}
+
+.Notre-métier-image {
+  height: 520px;
+}
+
+.Notre-métier {
+  flex-direction: row-reverse;
+}
+
+.Notre-métier-paragraphe, .Nos-postes, .footer {
+  color: black;
+}
+
+form {
+  padding: 66px 1em 1em 1em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(-45deg, #ffde59, #e7333a);
+}
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+  font-size: 0.75em;
+  color: #999;
+  top: -5px;
+  -webkit-transition: all 0.225s ease;
+  transition: all 0.225s ease;
+}
+
+.styled-input {
+  float: left;
+  width: 293px;
+  margin: 1rem 0;
+  position: relative;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 800px) {
+  .styled-input {
+    width: 100%;
+  }
+}
+.styled-input label {
+  color: #999;
+  padding: 1.3rem 30px 1rem 30px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.styled-input.wide {
+  width: 650px;
+  max-width: 100%;
+}
+
+input,
+textarea {
+  padding: 30px;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+}
+
+input:focus ~ span,
+textarea:focus ~ span {
+  width: 100%;
+  -webkit-transition: all 0.075s ease;
+  transition: all 0.075s ease;
+}
+
+textarea {
+  width: 100%;
+  min-height: 15em;
+  resize: vertical;
+}
+
+.input-container {
+  width: 650px;
+  max-width: 100%;
+}
+
+.inupt_submit {
+  width: 5px;
+  text-align: center;
+  display: contents;
+}
+
+.submit-btn:hover {
+  transform: translateY(1px);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);
+}
+
+@media (max-width: 800px) {
+  .submit-btn {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+}
+input[type=checkbox] + label {
+  color: #ccc;
+  font-style: italic;
+}
+
+input[type=checkbox]:checked + label {
+  color: #f00;
+  font-style: normal;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Notre-métier {
+    flex-direction: column;
+  }
+
+  .Notre-métier-paragraphe {
+    width: 90%;
+  }
+
+  .Notre-métier-image {
+    height: fit-content;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .header .header__img {
+    float: inherit;
+  }
+
+  .header__img {
+    margin-right: 41px;
+  }
+
+  .body {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .Qui-sommes-nous-paragraphe {
+    padding: 1em;
+  }
+
+  .Qui-sommes-nous-image {
+    position: static;
+  }
+
+  .site-pusher .site-container {
+    height: 100%;
+  }
+
+  .site-container {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .site-pusher {
+    height: 100%;
+    transition-duration: 0.3s;
+    transform: translateX(0px);
+  }
+
+  .site-content {
+    position: absolute;
+    top: 66px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 0;
+    overflow-y: scroll;
+    background-color: #fff;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .header__icon {
+    position: relative;
+    display: block;
+    float: left;
+    width: 35px;
+    height: 35px;
+    padding: 1em;
+    cursor: pointer;
+  }
+  .header__icon:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1rem;
+    height: 0;
+    box-shadow: 0 10px 0 1px black, 0 16px 0 1px black, 0 22px 0 1px black;
+  }
+
+  .menu {
+    transform: translateX(-250px);
+    transition-duration: 0.3s;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    bottom: 0;
+    color: black;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu a {
+    display: block;
+    height: 60px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px solid black;
+  }
+
+  .with--sidebar .site-pusher {
+    transform: translateX(250px);
+  }
+  .with--sidebar .site-cache {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .Qui-sommes-nous {
+    flex-direction: column;
+  }
+
+  .Qui-sommes-nous-paragraphe {
+    width: 90%;
+  }
+
+  .Qui-sommes-nous, .Notre-métier, .Nos-valeurs, .Nos-postes {
+    padding-bottom: 20px;
+  }
+
+  form, .Nos-valeurs, .Nos-postes, .Notre-métier {
+    padding: 1em;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .Nos-valeurs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Nos-valeurs-paragraphe {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Nos-valeurs-paragraphe div {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .site-content {
+    padding-top: 58px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,3 @@
+Réalisation pour l'entreprise DK Energy d'un site web vitrine avec formulaire de contact. Gestion du formulaire avec l'API fromspree et utilisation du langage SASS pour le front. Gestion du projet de la maquette (avec figma) jusqu'à la mise en production.  Technologies utilisés Javascript-SASS-figma-FromspreeApi-Git. 
+
+Realization for the company DK Energy of a showcase website with contact form. Management of the form with the fromspree API and the SASS language for the front-end. Management of the project from the model (with figma) to the production.  Technologies used Javascript-SASS-figma-FromspreeApi-Git. 
